@@ -1,6 +1,6 @@
-# E-book สิ่งที่ต้องรู้ก่อนลงทุนหุ้น
+# E-book สิ่งที่ต้องรู้ก่อนลงทุน
 
-Landing page ภาษาไทยสำหรับ E-book สิ่งที่ต้องรู้ก่อนลงทุนหุ้น by sun.scratch
+Landing page ภาษาไทยสำหรับ E-book สิ่งที่ต้องรู้ก่อนลงทุน by sun.scratch
 
 ## เปิดและแก้ไขใน VS Code
 
