@@ -1,0 +1,26 @@
+/* Fluid sizing across small phones, tablet orientations and wide desktop screens. */
+html{ -webkit-text-size-adjust:100%;scrollbar-gutter:stable }
+body{min-width:0;margin:0}
+.wrap{width:min(1040px,calc(100% - clamp(32px,5vw,64px)))}
+.hero-grid,.aud-grid,.benefit-grid{min-width:0}
+.hero-grid>* , .aud-grid>* , .benefit-grid>* , .lesson>*{min-width:0}
+img,svg{max-width:100%}
+.cover{display:block;height:auto;width:min(100%,340px)}
+.hero-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(24px,4vw,48px)}
+.hero h1{font-size:clamp(38px,4.5vw,62px)}
+.hero p,.lead,.lesson p,.checks li,.faq p,.faq summary{overflow-wrap:break-word}
+.button{min-height:48px;max-width:100%;text-align:center;white-space:normal;line-height:1.5}
+.button:after{flex-shrink:0}
+.offer-bar{padding:12px max(16px,env(safe-area-inset-right));column-gap:clamp(12px,2vw,24px)}
+.offer-copy{white-space:nowrap}.offer-timer{flex-shrink:0}.offer-note{text-align:center}
+.lesson{grid-template-columns:48px minmax(0,1fr) minmax(0,1.15fr)}
+.lesson p{grid-column:auto}
+.faq summary{min-height:56px;align-items:center}
+.faq summary:after{flex:0 0 auto}
+.footer{flex-wrap:wrap;padding-bottom:max(26px,env(safe-area-inset-bottom))}
+@media(min-width:680px) and (max-width:900px){.hero h1{font-size:clamp(36px,5.2vw,46px)}.hero-grid{padding:50px 0}.hero p{font-size:17px}.cover{max-width:290px}.lesson{grid-template-columns:42px minmax(0,1fr) minmax(0,1.1fr);gap:15px}}
+@media(max-width:760px){.aud-grid,.benefit-grid{grid-template-columns:minmax(0,1fr)}.section{padding:clamp(48px,8vw,65px) 0}.lesson{grid-template-columns:42px minmax(0,1fr);gap:10px 12px}.lesson p{grid-column:2}.offer-note{flex-basis:100%}}
+@media(max-width:679px){.hero-grid{grid-template-columns:minmax(0,1fr);gap:20px}.hero h1{font-size:clamp(32px,8.5vw,44px);line-height:1.35}.hero .tag{font-size:clamp(12px,3.2vw,14px)}.hero p{font-size:16px;line-height:1.8}.cover{width:min(78vw,280px)}.hero-grid{padding:40px 0 48px}.hero .sub{font-size:12px!important}.section h2{font-size:clamp(25px,6.6vw,32px)}.offer-bar{row-gap:7px}.offer-copy{font-size:15px}.offer-copy strong{font-size:22px}.offer-timer span{font-size:18px;min-width:34px;padding:4px 7px}.offer-note{font-size:11px}.lesson h3{font-size:19px}.lesson p{font-size:15px}.lesson-list{padding-left:13px}.lesson{padding:22px 10px}.lesson-icon{width:35px;height:35px}.faq summary{padding:18px 16px;gap:12px}.faq details p{padding:0 16px 20px}.quote{font-size:clamp(27px,7vw,36px)}.cta h2{font-size:clamp(28px,7vw,36px)}}
+@media(max-width:359px){.offer-copy{font-size:14px}.offer-copy strong{font-size:20px}.offer-timer{gap:4px}.offer-timer span{min-width:30px;font-size:16px}.offer-bar{column-gap:10px}.button{padding:13px 22px}.checks li{font-size:15px}.faq summary{font-size:16px}}
+@media(hover:none){.button:hover{transform:none;box-shadow:0 7px 0 #7d9e09,0 12px 23px #0005,inset 0 2px 0 #f6ffa9}.button:active{transform:translateY(5px);box-shadow:0 2px 0 #7d9e09,0 5px 12px #0004}}
+.aud-grid:before{left:0;right:0}
